@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'store',
     'carts',
     'orders',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -52,6 +53,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware'
 ]
 
 ROOT_URLCONF = 'greatkart.urls'
@@ -144,6 +146,7 @@ MESSAGE_TAGS = {
 #SMTP configurations
 EMAIL_HOST='smtp.gmail.com'
 EMAIL_PORT=587
-EMAIL_HOST_USER='hostMail'
-EMAIL_HOST_PASSWORD="hostPassword"
+EMAIL_HOST_USER='ginni921910@gmail.com'
+EMAIL_HOST_PASSWORD="moig pdsl pnqu erpk"
 EMAIL_USE_TLS=True
+CORS_ALLOW_ALL_ORIGINS = True
